@@ -15,10 +15,9 @@ const weather = (lat, long, callback) => {
                   feelt = response.body.current.feelslike
                   loc = response.body.location.name
                   country = response.body.location.country
-                  time = response.body.location.localtime
-                  prep = response.body.current.precip
+                   prep = response.body.current.precip
                   hum = response.body.current.humidity
-                  const s = 'Temperature=' + temp + ' Degree Celcius but it' + ' Feels-Like=' + feelt + ' Degree Celcius . Precipitation Chances=' + prep  +'%. Humidity='+hum+' in '+ loc + '\n at ' + time
+                  const s = 'Temperature=' + temp + ' Degree Celcius but it' + ' Feels-Like=' + feelt + ' Degree Celcius . Precipitation Chances=' + prep  +'%. Humidity='+hum+' in '+ loc
                   callback(undefined, {
                         data: s
 
